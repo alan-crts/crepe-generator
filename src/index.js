@@ -30,6 +30,9 @@ function set_recipe(e) {
         let recipe_for = recipe(input)
         let i = 0
         let div_ingredient = document.getElementById("ingredient")
+
+        document.getElementById('nb_pers').innerText = input
+
         for (let ingredient in recipe_for) {
             let div = div_ingredient.querySelectorAll("div")[i].querySelector("p")
             let span = document.createElement("span")
