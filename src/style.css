@@ -76,6 +76,7 @@ body {
     border-width: 1px;
     border-radius: 4px;
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
     background-color: #FFF;
     transition: all .3s;
 }
