@@ -75,6 +75,8 @@ body {
     border-color: #e62a72;
     border-width: 1px;
     border-radius: 4px;
+    font-size: 15px;
+    color: #000;
     font-family: 'Lato', sans-serif;
     background-color: #FFF;
     transition: all .3s;
