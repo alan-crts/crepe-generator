@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="shortcut icon" href="./src/img/crepe.ico" type="image/x-icon">
+    <title>Crêpe party</title>
+</head>
+
+<body>
+    <div id="app" class="generator">
+        <div class="input-div">
+            <div class="popup">
+                <img src="./src/img/crepe.png" alt="logo crêpe" width="50">
+                <h1>Crêpe Party Generator</h1>
+                <div class="form">
+                    <span>Nombre de personne :</span>
+                    <input type="number" min="1" placeholder="Exemple : 1" value="1" id="guys" onkeyup="set_recipe('0')">
+                    <button onclick="set_recipe('1')">Générer</button>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-div" id="ingredient">
+            <div class="farine">
+                <img src="./src/img/farine.png" alt="logo farine" width="100">
+                <p></p>
+            </div>
+            <div class="oeuf">
+                <img src="./src/img/carton-doeufs.png" alt="logo farine" width="100">
+                <p></p>
+            </div>
+            <div class="beurre">
+                <img src="./src/img/beurre.png" alt="logo farine" width="100">
+                <p></p>
+            </div>
+            <div class="sucre">
+                <img src="./src/img/un-carre-de-sucre.png" alt="logo farine" width="100">
+                <p></p>
+            </div>
+            <div class="lait">
+                <img src="./src/img/bouteille-de-lait.png" alt="logo farine" width="100">
+                <p></p>
+            </div>
+            <div class="paragraph-recipe">
+                <h1>Recette :</h1>
+                <ol>
+                    <li>Mettez la farine dans un saladier avec le sucre.</li>
+                    <li>Faites un puits au milieu et versez-y les œufs.</li>
+                    <li>Commencez à mélanger doucement. Quand le mélange devient épais, ajoutez le lait froid petit à petit.</li>
+                    <li>Quand tout le lait est mélangé, la pâte doit être assez fluide. Si elle vous paraît trop épaisse, rajoutez un peu de lait. Ajoutez ensuite le beurre fondu refroidi, mélangez bien.</li>
+                    <li>Faites cuire les crêpes dans une poêle chaude (par précaution légèrement huilée si votre poêle à crêpes n'est pas anti-adhésive). Versez une petite louche de pâte dans la poêle, faites un mouvement de rotation pour répartir la pâte
+                        sur toute la surface. Posez sur le feu et quand le tour de la crêpe se colore en roux clair, il est temps de la retourner.</li>
+                    <li>Laissez cuire environ une minute de ce côté et la crêpe est prête.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

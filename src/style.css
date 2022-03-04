@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@media only screen and (max-width:600px) {
+    .generator {
+        display: flex!important;
+        flex-direction: column;
+    }
+    .recipe-div {
+        width: 100vw!important;
+        margin: auto;
+        grid-template-columns: 1fr 1fr!important;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr!important;
+        gap: 0 0!important;
+        grid-template-areas: "farine oeuf" "beurre sucre" "lait ." "paragraph-recipe paragraph-recipe"!important;
+    }
+    .recipe-div>* {
+        margin: 1em auto!important;
+    }
+    .input-div {
+        width: 100vw!important;
+        padding: 37vh 0;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #ff00b3, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.popup h1 {
+    margin: 0 0 10% 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.popup img {
+    margin: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 2% 5% 5%;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: -6px 6px 42px -20px rgba(0, 0, 0);
+}
+
+.form span {
+    margin: 0 20% 1%;
+    font-size: 14px;
+}
+
+.form input {
+    margin: 0 20% 10%;
+}
+
+.form button {
+    width: fit-content;
+    margin: 0 40%;
+    padding: 2%;
+    border-style: solid;
+    border-color: #e62a72;
+    border-width: 1px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    background-color: #FFF;
+    transition: all .3s;
+}
+
+.form button:hover {
+    background-color: #e62a7256;
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.form button:active {
+    background-color: #e62a7256;
+    transform: translate(0px, 0px);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.input-div {
+    display: flex;
+    width: 50vw;
+    grid-area: input-div;
+}
+
+.generator {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas: "input-div recipe-div recipe-div" "input-div recipe-div recipe-div" "input-div recipe-div recipe-div";
+}
+
+.recipe-div {
+    display: grid;
+    width: 50vw;
+    text-align: center;
+    grid-area: recipe-div;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.8fr 1.4fr;
+    gap: 0 0;
+    grid-template-areas: "farine oeuf beurre" "Sucre Lait ." "paragraph-recipe paragraph-recipe paragraph-recipe";
+}
+
+.recipe-div div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -6px 6px 42px -20px rgba(0, 0, 0);
+    transition: all .5s;
+}
+
+.recipe-div div:hover {
+    transform: scale(1.05);
+}
+
+.recipe-div div:hover:last-of-type {
+    transform: none;
+}
+
+.recipe-div div:last-of-type {
+    width: 95%;
+}
+
+.recipe-div img {
+    margin: 10% auto;
+}
+
+.farine {
+    grid-area: farine;
+}
+
+.oeuf {
+    grid-area: oeuf;
+}
+
+.beurre {
+    grid-area: beurre;
+}
+
+.Sucre {
+    grid-area: Sucre;
+}
+
+.Lait {
+    grid-area: Lait;
+}
+
+.paragraph-recipe {
+    padding-right: 1.5em;
+    text-align: left;
+    list-style: decimal;
+    grid-area: paragraph-recipe;
+}
+
+.paragraph-recipe li {
+    margin-bottom: 1em;
+}
+
+.paragraph-recipe li:last-of-type {
+    margin-bottom: 0;
+}
+
+.paragraph-recipe h1 {
+    text-decoration: underline;
+    margin: .4em 0 0 .8em;
+    font-size: 20px;
+}
+
+.subline {
+    text-decoration: underline;
+}
